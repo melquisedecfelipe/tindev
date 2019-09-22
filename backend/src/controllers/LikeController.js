@@ -13,7 +13,16 @@ module.exports = {
     }
 
     if (targetDev.likes.includes(user)) {
-      console.log('Deu match');
+      const loggedSocket = req.connectedUsers[user];
+      const targetSOcket = req.connectedUsers[devId];
+
+      if (loggedSocket) {
+        req.io.to(loggedSocket).emit('match', targetDev);
+      }
+      
+      if (targetDev) {
+        req.io.to(targetDev).emit('match', loggedSocket);
+      }
     }
 
     loggedDev.likes.push(targetDev._id);
