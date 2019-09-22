@@ -11,7 +11,6 @@ import like from '../assets/like.svg';
 export default function Main({ match }) {
   const [users, setUsers] = useState([]);
 
-
   useEffect(() => {
     async function loadUsers() {
       const response = await api.get('/devs', {
