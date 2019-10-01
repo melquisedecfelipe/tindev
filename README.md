@@ -63,11 +63,18 @@ $ git clone https://github.com/melquisedecfelipe/tindev
 $ cd tindev
 
 # Go into the backend and install dependencies
+$ cd backend
 $ npm i
 
-# Run aplication
-$ cd backend
+# Run backend
 $ npm run dev
+
+# Go into the frontend and install dependencies
+$ cd ../frontend
+$ npm i
+
+# Run frontend
+$ npm start
 
 # Go into the mobile and install dependencies
 $ cd ../mobile
