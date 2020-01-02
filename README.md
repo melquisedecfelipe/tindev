@@ -66,6 +66,9 @@ $ cd tindev
 $ cd backend
 $ npm i
 
+# Create .env file and add database url
+$ MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/tindev?retryWrites=true&w=majority'
+
 # Run backend
 $ npm run dev
 
