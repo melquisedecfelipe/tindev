@@ -1,21 +1,22 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+require("dotenv").config();
 
-const routes = require('./routes');
+const routes = require("./routes");
 
 const app = express();
-const server = require('http').Server(app);
-const io = require('socket.io')(server);
+const server = require("http").Server(app);
+const io = require("socket.io")(server);
 
 const connectedUsers = {};
 
-io.on('connection', socket => {
+io.on("connection", socket => {
   const { user } = socket.handshake.query;
-  connectedUsers[user] = socket.id
+  connectedUsers[user] = socket.id;
 });
 
-mongoose.connect('mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/admin?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
