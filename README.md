@@ -66,7 +66,7 @@ $ git clone https://github.com/melquisedecfelipe/tindev
 $ cd tindev
 
 # Create .env file and add database url
-$ MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/tindev?retryWrites=true&w=majority'
+$ echo "MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/tindev?retryWrites=true&w=majority'" >> .env
 
 # Go into the backend and install dependencies
 $ cd backend
