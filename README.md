@@ -32,24 +32,27 @@
 This project was developed with the following technologies:
 
 Backend
--  [Axios](https://github.com/axios/axios)
--  [Cors](https://github.com/expressjs/cors)
--  [Express](https://expressjs.com/)
--  [Mongoose](https://mongoosejs.com/mul)
--  [Socket.io](http://socket.io/)
--  [Nodemon](https://nodemon.io/)
+
+- [Axios](https://github.com/axios/axios)
+- [Cors](https://github.com/expressjs/cors)
+- [Express](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/mul)
+- [Socket.io](http://socket.io/)
+- [Nodemon](https://nodemon.io/)
 
 Frontend
--  [Axios](https://github.com/axios/axios)
--  [React](https://reactjs.org/)
--  [React router](https://reacttraining.com/react-router/)
--  [Socket.io client](https://github.com/socketio/socket.io-client)
+
+- [Axios](https://github.com/axios/axios)
+- [React](https://reactjs.org/)
+- [React router](https://reacttraining.com/react-router/)
+- [Socket.io client](https://github.com/socketio/socket.io-client)
 
 Mobile
--  [Axios](https://github.com/axios/axios)
--  [React native](https://facebook.github.io/react-native/)
--  [React navigation](https://reactnavigation.org/)
--  [Socket.io client](https://github.com/socketio/socket.io-client)
+
+- [Axios](https://github.com/axios/axios)
+- [React native](https://facebook.github.io/react-native/)
+- [React navigation](https://reactnavigation.org/)
+- [Socket.io client](https://github.com/socketio/socket.io-client)
 
 ## :information_source: How To Use
 
@@ -62,12 +65,12 @@ $ git clone https://github.com/melquisedecfelipe/tindev
 # Go into the repository
 $ cd tindev
 
+# Create .env file and add database url
+$ MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/tindev?retryWrites=true&w=majority'
+
 # Go into the backend and install dependencies
 $ cd backend
 $ npm i
-
-# Create .env file and add database url
-$ MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/tindev?retryWrites=true&w=majority'
 
 # Run backend
 $ npm run dev
@@ -91,6 +94,7 @@ $ npm run android
 ```
 
 ## :memo: License
+
 This project is under the MIT license. See the [LICENSE](https://github.com/melquisedecfelipe/tindev/blob/master/LICENSE) for more information.
 
 ---
