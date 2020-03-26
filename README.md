@@ -1,6 +1,5 @@
 <h1 align="center">
     <img alt="Tindev" src="https://res.cloudinary.com/dtifsqadc/image/upload/v1570725817/logo_2x_s1w11p.png" />
-    <br>
 </h1>
 
 <p align="center">
